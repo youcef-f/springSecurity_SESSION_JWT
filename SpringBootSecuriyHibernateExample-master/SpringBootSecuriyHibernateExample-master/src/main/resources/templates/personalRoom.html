@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#transaction-list-div").load("transactList");
+        });
+        $(function(){
+            $("#userData").load("userData");
+        });
+    </script>
+    <script src="fillPersonalRoom.js"></script>
+  </head>
+  <body>
+    <div>
+      <a href="/logout">Logout</a>
+    </div>
+    <div id="userData">
+    </div>
+    <div id="transaction-list-div">
+    </div>
+    <a href="/transfer"><button type="button">Transfer</button></a>
+  </body>
+</html>

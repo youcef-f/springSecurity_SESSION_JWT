@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#user-list-div").load("userListForAdmin");
+        });
+        $(function () {
+            $("#userData").load("userData");
+        });
+        $(function () {
+            $("#transaction-list-div").load("transactList");
+        });
+    </script>
+    <script src="fillPersonalRoom.js"></script>
+    <script src="findUser.js"></script>
+    <script src="lockUser.js"></script>
+</head>
+<body>
+<div>
+    <a href="/logout">Logout</a>
+</div>
+<div id="userData">
+
+</div>
+<div id="transaction-list-div">
+</div>
+<a href="/transfer">
+    <button type="button">Transfer</button>
+</a>
+<div id="user-list-div">
+</div>
+<span>Search by username to see user data and lock user account if you want</span>
+<div>
+    <input id="search-input" placeholder="Search User"/>
+    <button type="button" id="search-button">Search</button>
+</div>
+<div id="search-result-div" style="visibility: hidden">
+    <form id="search-form">
+        Name : <label id="found-user-name"></label><br/>
+        Budget : <label id="found-user-budget"></label><br/>
+        <button id="user-lock-button" type="submit"></button>
+    </form>
+</div>
+</body>
+</html>

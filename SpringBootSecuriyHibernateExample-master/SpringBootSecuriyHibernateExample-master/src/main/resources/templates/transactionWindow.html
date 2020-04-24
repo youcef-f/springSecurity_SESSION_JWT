@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="executeTransaction.js"></script>
+  </head>
+  <body>
+    <div id="transaction-form-div">
+      <form class="form" id="transaction-form">
+        <div id="toUser-value-div">
+          <input type="text" id="toUser-input" placeholder="User to transfer to"/>
+          <input type="number" min="0" id="value-input" placeholder="Value to transfer to"/>
+        </div>
+        <button type="submit" id="transaction-form-submit">TRANSFER</button>
+      </form>
+    </div>
+  </body>
+</html>
